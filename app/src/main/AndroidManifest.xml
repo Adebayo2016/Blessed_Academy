@@ -34,11 +34,11 @@
 
         </activity>
         <activity android:name=".OpenfFuta"/>
+        <activity android:name=".MorePdf"/>
         <activity android:name=".unimedPdf"/>
         <activity android:name=".OpenPdf"/>
         <activity android:name=".OpenVideo"/>
         <activity android:name=".About_us"/>
-        <activity android:name=".Web" />
     </application>
 
 </manifest>

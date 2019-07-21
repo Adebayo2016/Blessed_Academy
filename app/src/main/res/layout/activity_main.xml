@@ -45,15 +45,12 @@
                 app:popupTheme="@style/AppTheme.PopupOverlay" />
 
 
-
-
-
             <View
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:alpha="0.3"
                 android:background="@drawable/scrim"
-                android:fitsSystemWindows="true"/>
+                android:fitsSystemWindows="true" />
 
 
             <android.support.design.widget.TabLayout

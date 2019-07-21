@@ -109,8 +109,8 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
 
 
         if (id== R.id.feed){
-            Intent intent = new Intent (this, Web.class);
-            startActivity(intent);
+            Intent implicit = new Intent(Intent.ACTION_VIEW, Uri.parse("https://blessedacademyone.wixsite.com/website"));
+            startActivity(implicit);
         }
 
         return true;

@@ -95,13 +95,12 @@ public class FragmentQuestion extends android.support.v4.app.Fragment  {
         });
 
 
-        unilorin=(CardView)view.findViewById(R.id.unilorin);
+        unilorin=(CardView)view.findViewById(R.id.more);
         unilorin.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent2 = new Intent (view.getContext(),OpenPdf.class );
-                intent2.putExtra("send", "unilorin.pdf");
-                startActivityForResult(intent2,0);
+                Intent intent2 = new Intent (view.getContext(),MorePdf.class );
+                startActivity(intent2);
             }
         });
 
