@@ -10,10 +10,9 @@ public class MorePdf extends AppCompatActivity {
 
 
     @Override
-    protected void onCreate( Bundle savedInstanceState) {
+    protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.more);
-
 
     }
 
@@ -26,9 +25,33 @@ public class MorePdf extends AppCompatActivity {
 
     public void eksu(View view) {
 
+        Intent intent2 = new Intent (view.getContext(),OpenPdf.class );
+        intent2.putExtra("send", "eksu.pdf");
+        startActivityForResult(intent2,0);
+
 
     }
 
     public void aaua(View view) {
+
+        Intent intent2 = new Intent (view.getContext(),OpenPdf.class );
+        intent2.putExtra("send", "aaua.pdf");
+        startActivityForResult(intent2,0);
+    }
+
+    public void unical(View view) {
+
+        Intent intent2 = new Intent (view.getContext(),OpenPdf.class );
+        intent2.putExtra("send", "unical.pdf");
+        startActivityForResult(intent2,0);
+
+
+    }
+
+    public void waec(View view) {
+        Intent intent = new Intent(this, Web.class);
+        startActivity(intent);
+
+
     }
 }
